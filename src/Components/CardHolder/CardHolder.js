@@ -6,17 +6,6 @@ import './CardHolder.css'
 
 function CardHolder() {
 
-    // TEMPORARY
-    // const leagues = [{
-    //     idLeague : 4346, 
-    //     strLeague : "English", 
-    //     strSport : "Soccer"
-    // }, {
-    //     idLeague : 4347, 
-    //     strLeague : "English", 
-    //     strSport : "Soccer"
-    // }]
-
     // useState hook to hold the fetched data
     const [leagues, setLeagues] = useState([]);
 

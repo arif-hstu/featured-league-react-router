@@ -20,11 +20,18 @@ function Details() {
         .catch(err => console.log(err))
     }, [])
     return (
-        <div className='infoHolder'>
-            {
-                info.map(inf => <InfoCard info={inf}></InfoCard>)
-            }
-        </div>
+        <>
+            <div className='infoHolder'>
+                {
+                    info.map(inf => <InfoCard info={inf}></InfoCard>)
+                }
+            </div>
+            <div className='description'>
+                {
+                    info.map(inf => <div><p>{inf.strDescriptionEN}</p></div>)
+                }
+            </div>
+        </>
     );
 }
 

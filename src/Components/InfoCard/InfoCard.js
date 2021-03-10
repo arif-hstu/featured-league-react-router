@@ -6,12 +6,17 @@ import ImageHolder from '../ImageHolder/ImageHolder'
 import './InfoCard.css'
 
 function InfoCard(props) {
-    const { strGender } = props.info;
+    const { strGender, strDescriptionEN } = props.info;
     return(
+        <>
         <div className='infoCard'>
             <Info info={props.info}></Info>
             <ImageHolder gender={strGender}></ImageHolder>
         </div>
+        {/* <div>
+            <p>{strDescriptionEN}</p>
+        </div> */}
+        </>
     );
 }
 
