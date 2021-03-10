@@ -6,7 +6,7 @@ import './CardHolder.css'
 
 function CardHolder() {
 
-    // // TEMPORARY
+    // TEMPORARY
     // const leagues = [{
     //     idLeague : 4346, 
     //     strLeague : "English", 
