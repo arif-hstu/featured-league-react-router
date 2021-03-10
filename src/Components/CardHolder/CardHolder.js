@@ -5,14 +5,30 @@ import Card from '../Card/Card';
 import './CardHolder.css'
 
 function CardHolder() {
+
+    // // TEMPORARY
+    // const leagues = [{
+    //     idLeague : 4346, 
+    //     strLeague : "English", 
+    //     strSport : "Soccer"
+    // }, {
+    //     idLeague : 4347, 
+    //     strLeague : "English", 
+    //     strSport : "Soccer"
+    // }]
+
+    // useState hook to hold the fetched data
     const [leagues, setLeagues] = useState([]);
 
+    // useEffect hook to fetch the data from api
     useEffect(() => {
         const url = 'https://www.thesportsdb.com/api/v1/json/1/all_leagues.php';
         fetch(url)
         .then(res => res.json())
         .then(data => setLeagues(data.leagues))
+        .catch(err => console.log(err))
     }, []);
+
     return(
         <div className='container cardHolder'>
             <div className='row'>
