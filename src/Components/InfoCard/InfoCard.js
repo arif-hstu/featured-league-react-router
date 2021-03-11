@@ -13,9 +13,6 @@ function InfoCard(props) {
             <Info info={props.info}></Info>
             <ImageHolder gender={strGender}></ImageHolder>
         </div>
-        {/* <div>
-            <p>{strDescriptionEN}</p>
-        </div> */}
         </>
     );
 }

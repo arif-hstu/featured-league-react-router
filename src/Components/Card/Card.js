@@ -11,7 +11,7 @@ function Card(props) {
         const url = `league/${id}`;
         history.push(url);
     }
-    
+    console.log(props.league)
     return(
         <div className='col-lg-4 col-md-6 col-sm-12 g-5 card'> 
             <h4>{strLeague}</h4>

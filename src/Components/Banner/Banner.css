@@ -1,0 +1,11 @@
+.banner {
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: cornflowerblue;
+}
+
+.banner img {
+    height: 50%;
+}

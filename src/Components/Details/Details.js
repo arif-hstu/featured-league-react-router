@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router';
+import Banner from '../Banner/Banner';
 import InfoCard from '../InfoCard/InfoCard';
 
 // import styleSheet
@@ -19,8 +20,10 @@ function Details() {
         .then(data => setInfo(data.leagues))
         .catch(err => console.log(err))
     }, [])
+
     return (
-        <>
+        <>  
+            <Banner></Banner>
             <div className='infoHolder'>
                 {
                     info.map(inf => <InfoCard info={inf}></InfoCard>)
