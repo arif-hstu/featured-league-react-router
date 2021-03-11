@@ -13,12 +13,12 @@ function CardHolder() {
     useEffect(() => {
         const url = 'https://www.thesportsdb.com/api/v1/json/1/all_leagues.php';
         fetch(url)
-        .then(res => res.json())
-        .then(data => setLeagues(data.leagues))
-        .catch(err => console.log(err))
+            .then(res => res.json())
+            .then(data => setLeagues(data.leagues))
+            .catch(err => console.log(err))
     }, []);
 
-    return(
+    return (
         <div className='container cardHolder'>
             <div className='row'>
                 {

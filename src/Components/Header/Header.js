@@ -7,7 +7,7 @@ import './Header.css'
 function Header() {
     return(
         <div className='header'>
-            <a href='/'><h2>arif</h2></a>
+            <h2>Featured League Archives</h2>
         </div>
     );
 }

@@ -12,11 +12,18 @@ import {
   Switch
 } from 'react-router-dom';
 import Details from './Components/Details/Details';
+import { createContext } from 'react';
+
+
+// fetch data from the api
+
+// creating context for passing fetched data
+// export const FetchedContext = createContext();
 
 function App() {
   return (
-    <div>
-
+    // <FetchedContext.Provider value='arif' >
+    <div className='app'>
       <Router>
         <Switch>
           <Route exact path='/'>
@@ -30,6 +37,7 @@ function App() {
           </Route>
         </Switch>
       </Router>
+    {/* // </FetchedContext.Provider> */}
     </div>
   );
 }
