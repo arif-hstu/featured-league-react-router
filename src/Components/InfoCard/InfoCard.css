@@ -1,9 +1,10 @@
 .infoCard {
     width: 80%;
-    background-color:cadetblue;
+    background-color:#3a42ff;
     margin-top: 2%;
-    padding: 1%;
+    padding: 3%;
     display: flex;
     justify-content: space-between;
     border-radius: 10px;
+    color: #fff;
 }

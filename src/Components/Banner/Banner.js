@@ -21,13 +21,20 @@ function Banner() {
     }, [])
     return (
         <div className='banner'>
-            <div>
+            <div className='banner-image'>
+                <img src={
+                    info.map(inf => inf.strFanart1)
+                } alt="" />
+            </div>
+            <div className='title-badge'>
                 <a href="/" alt=''>
                     <h2>Featured League Archives</h2>
                 </a>
-                <img src={
+                <div className='banner-badge'>
+                    <img src={
                     info.map(inf => inf.strBadge)
-                } />
+                    } />
+                </div>
             </div>
         </div>
     );

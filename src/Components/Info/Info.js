@@ -8,7 +8,7 @@ function Info(props) {
             <h3>{ strLeague }</h3>
             <h5>Founded: {intFormedYear}</h5>
             <h5>Country: {strCountry}</h5>
-            <h5>Sport Type: {strSport}</h5>
+            <h5>Sports Type: {strSport}</h5>
             <h5>Gender: {strGender}</h5>
         </div>
     );

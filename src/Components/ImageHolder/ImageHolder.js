@@ -4,8 +4,8 @@ import React from 'react'
 import './ImageHolder.css'
 
 //import image
-import maleImage from '../../images/maleImage.jpg';
-import femaleImage from '../../images/femaleImage.jpg';
+import maleImage from '../../images/male.png';
+import femaleImage from '../../images/female.png';
 
 function ImageHolder(props) {
     const { gender } = props;
