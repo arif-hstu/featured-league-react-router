@@ -1,3 +1,3 @@
-# Getting Started with Create React App
+# Welcome to the Featured League Archives
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project has been deployed in Netlify: [Live Site](https://heuristic-wilson-62a18b.netlify.app/).
